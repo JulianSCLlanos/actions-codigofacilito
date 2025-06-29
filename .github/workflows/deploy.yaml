@@ -9,8 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout code"
-      - uses: actions/checkout@v2
-      - run: echo "Hacemos pull del códiigo"
-      - run: echo "Correr migraciones"
-      - run: echo "Generar binario"
-      - run: echo "Publicar versión"
+        run: echo "Hacemos pull del códiigo"
+        run: echo "Correr migraciones"
+        run: echo "Generar binario"
+        run: echo "Publicar versión"
