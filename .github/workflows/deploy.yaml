@@ -1,0 +1,15 @@
+name: "Deploy Cody"
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy-cody:
+    runs-on: ubuntu-latest
+    steps:
+        run:
+          echo "Hacemos pull del códiigo"
+          echo "Correr migraciones"
+          echo "Generar binario"
+          echo "Publicar versión"
