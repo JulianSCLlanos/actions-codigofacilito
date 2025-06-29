@@ -8,7 +8,7 @@ jobs:
   deploy-cody:
     runs-on: ubuntu-latest
     steps:
-      - name: "Checkout code"
+      - name: Checkout code
         run: echo "Hacemos pull del códiigo"
         run: echo "Correr migraciones"
         run: echo "Generar binario"
