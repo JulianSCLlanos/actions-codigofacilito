@@ -11,6 +11,7 @@ jobs:
         run: echo "Hola mundo desde el primer job"
 
   segundo_job:
+    needs: primer_job
     runs-on: ubuntu-latest
 
     steps:
