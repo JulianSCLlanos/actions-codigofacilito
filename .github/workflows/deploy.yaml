@@ -7,13 +7,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Hola mundo
-        run: echo "Hola mundo desde el primer job"
+      - name: Generar archivo
+        run: |
+          echo "Archivo prueba, hola" >> test.log
 
-  segundo_job:
-    needs: primer_job
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Hola mundo
-        run: echo "Hola mundo desde el seguundo job"
+      - name: Subir archivo
+        uses: actions/upload-artifact@v4
+        with:
+          name: archivo-test
+          path: test.log
