@@ -1,15 +1,11 @@
-name: "Deploy Cody"
+name: Deploy al servidor
 
-on:
-  push:
-    branches: ["main"]
+on: push
 
 jobs:
-  deploy-cody:
+  primer_job:
     runs-on: ubuntu-latest
-    
+
     steps:
-      - run: echo "Hacemos pull del códiigo"
-      - run: echo "Correr migraciones"
-      - run: echo "Generar binario"
-      - run: echo "Publicar versión"
+      - name: Hola mundo
+        run: echo "Hola mundo desde el primer job"
